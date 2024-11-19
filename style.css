@@ -1,0 +1,129 @@
+body{
+    font-size: 25px; /* Muda o tamanho do texto (fonte) */
+    background-image: linear-gradient(to right, black , red); /* Adiciona uma cor de fundo degradê */
+    animation: slime 5s infinite alternate;
+}
+
+@keyframes slime{
+    0%{
+        background-size: 400% 400%;
+        background-position: 0% 50%;
+    }
+    50%{
+        background-size: 200% 200%;
+        background-position: 100% 50%;
+    }
+    100%{
+        background-size: 400% 400%;
+        background-position: 0% 50%;
+    }
+}
+
+.animacao{
+    animation: moverParaDireita 5s ease-in-out;
+}
+
+@keyframes moverParaDireita{
+    from{
+        transform: translate(-100%);
+    }
+    to{
+        transform: translate(0);
+    }
+}
+
+.perfil{
+    border-radius: 4px; /* Adiiona uma borda arredondada */
+}
+
+.seguir{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.container{
+    background-image: linear-gradient(to right, #F0F0F0, #F28080);
+    border: 1px solid black; /* Define a borda */
+    border-radius: 10px; /* Arredonda os cantos */
+    padding: 20px; /* Cria um espaço interno */
+    box-sizing: border-box; /* Inclui padding e border no tamanho da caixa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seguir-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-perfil , h1 , h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nome{
+    color: red; 
+}
+
+
+p , h1 , h2 , h3{
+    color: white; /* Muda a cor do texto */
+}
+
+p{
+    text-shadow: 4px 4px 8px black; /* Adiciona sombra no texto */
+}
+
+.imagens{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Cria uma separação entre as imagens */
+}
+
+text-download{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.downloads{
+    column-count: 4;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    column-count: 4; /* Adiciona um total de colunas */
+    column-gap: 10px;
+}
+
+a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif; /* Define uma fonte ao texto */
+    font-weight: bold;
+    text-decoration: none; /* Retira o sublinhado de baixo do texto */
+    font-size: 15px;
+}
+
+.caixa-info{
+    background-image: linear-gradient(to right, #F28080, #D3D3D3);
+    border: 1px solid black; /* Define a borda */
+    border-radius: 10px; /* Arredonda os cantos */
+    padding: 20px; /* Cria um espaço interno */
+    box-sizing: border-box; /* Inclui padding e border no tamanho da caixa */
+}
+
+.texto-caixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
